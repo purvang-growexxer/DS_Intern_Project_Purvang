@@ -18,7 +18,8 @@ with DAG(
     max_active_runs=1,
     schedule_interval="@daily",  # Runs once every 24 hours
     default_args={
-        "email_on_failure": False,
+        "email_on_failure": True,
+        "email": ['purvang.maheria@growexx.com'],
         "email_on_retry": False,
         "retries": 1,
         "retry_delay": timedelta(minutes=1),
