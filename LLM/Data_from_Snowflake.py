@@ -20,12 +20,12 @@ def get_gemini_response(question, prompt):
 def read_snowflake_query(sql):
     # Establish connection to Snowflake
     conn = snowflake.connector.connect(
-        user='Purvang',
-        password='Purvang@2003',
-        account='kc32134.ap-southeast-1',
-        warehouse='COMPUTE_WH',
-        database='PURVANG_FLIGHT',
-        schema='PUBLIC'
+        user='your_username',
+        password='your_password',
+        account='your_account',
+        warehouse='your_warehouese',
+        database='your_db',
+        schema='your_schema'
     )
     cur = conn.cursor()
     cur.execute(sql)
